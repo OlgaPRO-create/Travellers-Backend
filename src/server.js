@@ -15,7 +15,7 @@ import storiesRoutes from './routes/storiesRoutes.js';
 import categoriesRoutes from './routes/categoriesRoutes.js';
 
 const app = express();
-const PORT = process.env.PORT ?? 4000;
+const PORT = process.env.PORT ?? 3000;
 
 app.use(logger);
 app.use(express.json());
