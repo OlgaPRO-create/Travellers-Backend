@@ -14,12 +14,19 @@ import userRoutes from './routes/userRoutes.js';
 import storiesRoutes from './routes/storiesRoutes.js';
 import categoriesRoutes from './routes/categoriesRoutes.js';
 
+
 const app = express();
 const PORT = process.env.PORT ?? 3000;
 
 app.use(logger);
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+  })
+);
 app.use(cookieParser());
 
 // Auth routers
