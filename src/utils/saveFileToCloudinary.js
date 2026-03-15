@@ -14,7 +14,6 @@ export async function saveFileToCloudinary(buffer, storyId) {
       {
         folder: 'stories/story-images',
         resource_type: 'image',
-        // public_id: `storyImage_${storyId}`,
         overwrite: true,
         unique_filename: true,
       },

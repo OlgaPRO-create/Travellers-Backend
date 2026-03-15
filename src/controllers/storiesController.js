@@ -131,6 +131,7 @@ export const getOwnStories = async (req, res) => {
     totalPages,
     stories,
   });
+
 };
 
 export const updateStory = async (req, res) => {
